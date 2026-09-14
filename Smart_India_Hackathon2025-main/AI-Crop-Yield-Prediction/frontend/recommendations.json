@@ -1,0 +1,567 @@
+{
+  "Tea": {
+    "Green Tea": {
+      "Herbal": {
+        "Kharif": {
+          "fertilizers": ["Nitrogen", "Potash", "Compost"],
+          "pesticides": ["Weed Control", "Neem Oil"],
+          "water": "Moderate",
+          "profit_per_acre": 15000,
+          "alternative_crops": ["Lemon Grass", "Tulsi"]
+        },
+        "Rabi": {
+          "fertilizers": ["Urea", "Compost"],
+          "pesticides": ["Neem Oil"],
+          "water": "Moderate",
+          "profit_per_acre": 14000,
+          "alternative_crops": ["Mint", "Lemon Grass"]
+        }
+      }
+    },
+    "Black Tea": {
+      "Ceylon": {
+        "Kharif": {
+          "fertilizers": ["Nitrogen", "Phosphate"],
+          "pesticides": ["Weed Control", "Insecticide"],
+          "water": "High",
+          "profit_per_acre": 16000,
+          "alternative_crops": ["Assam Tea", "Green Tea"]
+        }
+      },
+      "Assam": {
+        "Rabi": {
+          "fertilizers": ["Urea", "Potash"],
+          "pesticides": ["Weed Control"],
+          "water": "High",
+          "profit_per_acre": 17000,
+          "alternative_crops": ["Ceylon Tea", "Cardamom"]
+        }
+      }
+    }
+  },
+  "Rice": {
+    "Basmati": {
+      "Long Grain": {
+        "Kharif": {
+          "fertilizers": ["Urea", "DAP", "MOP"],
+          "pesticides": ["Insecticides", "Weed Control"],
+          "water": "High",
+          "profit_per_acre": 20000,
+          "alternative_crops": ["Wheat", "Maize"]
+        }
+      }
+    },
+    "Short Grain": {
+      "Rabi": {
+        "fertilizers": ["Urea", "Compost"],
+        "pesticides": ["Insecticides"],
+        "water": "Medium",
+        "profit_per_acre": 18000,
+        "alternative_crops": ["Barley", "Millet"]
+      }
+    }
+  },
+  "Maize": {
+    "Hybrid": {
+      "Sweet": {
+        "Kharif": {
+          "fertilizers": ["Urea", "DAP"],
+          "pesticides": ["Weed Control", "Fungicide"],
+          "water": "Medium",
+          "profit_per_acre": 12000,
+          "alternative_crops": ["Sorghum", "Millet"]
+        }
+      },
+      "Field": {
+        "Rabi": {
+          "fertilizers": ["Compost", "Nitrogen"],
+          "pesticides": ["Insecticides"],
+          "water": "Medium",
+          "profit_per_acre": 11000,
+          "alternative_crops": ["Wheat", "Barley"]
+        }
+      }
+    }
+  },
+  "Wheat": {
+    "Durum": {
+      "Bread": {
+        "Rabi": {
+          "fertilizers": ["Urea", "Phosphate"],
+          "pesticides": ["Fungicide", "Insecticide"],
+          "water": "Medium",
+          "profit_per_acre": 16000,
+          "alternative_crops": ["Barley", "Oats"]
+        }
+      }
+    },
+    "Soft": {
+      "Pastry": {
+        "Rabi": {
+          "fertilizers": ["Urea", "Compost"],
+          "pesticides": ["Fungicide"],
+          "water": "Medium",
+          "profit_per_acre": 15000,
+          "alternative_crops": ["Oats", "Millet"]
+        }
+      }
+    }
+  },
+  "Vegetables": {
+    "Tomato": {
+      "Cherry": {
+        "Kharif": {
+          "fertilizers": ["Urea", "Potash"],
+          "pesticides": ["Fungicide", "Insecticide"],
+          "water": "Medium",
+          "profit_per_acre": 13000,
+          "alternative_crops": ["Capsicum", "Brinjal"]
+        }
+      },
+      "Beefsteak": {
+        "Rabi": {
+          "fertilizers": ["Compost", "DAP"],
+          "pesticides": ["Fungicide"],
+          "water": "Medium",
+          "profit_per_acre": 12500,
+          "alternative_crops": ["Cucumber", "Zucchini"]
+        }
+      }
+    },
+    "Potato": {
+      "Kufri": {
+        "Kharif": {
+          "fertilizers": ["Urea", "MOP"],
+          "pesticides": ["Insecticides", "Fungicides"],
+          "water": "Medium",
+          "profit_per_acre": 14000,
+          "alternative_crops": ["Carrot", "Beetroot"]
+        }
+      },
+      "Early": {
+        "Rabi": {
+          "fertilizers": ["Compost", "DAP"],
+          "pesticides": ["Fungicide"],
+          "water": "Medium",
+          "profit_per_acre": 13500,
+          "alternative_crops": ["Onion", "Garlic"]
+        }
+      }
+    },
+    "Cabbage": {
+      "Green": {
+        "Kharif": {
+          "fertilizers": ["Urea", "Compost"],
+          "pesticides": ["Insecticides"],
+          "water": "Medium",
+          "profit_per_acre": 10000,
+          "alternative_crops": ["Cauliflower", "Broccoli"]
+        }
+      },
+      "Red": {
+        "Rabi": {
+          "fertilizers": ["Urea", "Potash"],
+          "pesticides": ["Fungicides"],
+          "water": "Medium",
+          "profit_per_acre": 10500,
+          "alternative_crops": ["Cauliflower", "Lettuce"]
+        }
+      }
+    },
+    "Cauliflower": {
+      "Snowball": {
+        "Kharif": {
+          "fertilizers": ["Compost", "DAP"],
+          "pesticides": ["Insecticides"],
+          "water": "Medium",
+          "profit_per_acre": 11000,
+          "alternative_crops": ["Cabbage", "Broccoli"]
+        }
+      }
+    },
+    "Capsicum": {
+      "Bell": {
+        "Rabi": {
+          "fertilizers": ["Urea", "Compost"],
+          "pesticides": ["Fungicides", "Insecticides"],
+          "water": "Medium",
+          "profit_per_acre": 12000,
+          "alternative_crops": ["Tomato", "Chili"]
+        }
+      }
+    }
+  },
+  "Fruits": {
+    "Mango": {
+      "Alphonso": {
+        "Kharif": {
+          "fertilizers": ["Urea", "Compost"],
+          "pesticides": ["Insecticides"],
+          "water": "High",
+          "profit_per_acre": 30000,
+          "alternative_crops": ["Papaya", "Guava"]
+        }
+      },
+      "Kesar": {
+        "Rabi": {
+          "fertilizers": ["Urea", "Potash"],
+          "pesticides": ["Fungicide"],
+          "water": "High",
+          "profit_per_acre": 28000,
+          "alternative_crops": ["Mango Alphonso", "Sapota"]
+        }
+      }
+    },
+    "Banana": {
+      "Cavendish": {
+        "Kharif": {
+          "fertilizers": ["Urea", "MOP"],
+          "pesticides": ["Insecticides"],
+          "water": "High",
+          "profit_per_acre": 22000,
+          "alternative_crops": ["Papaya", "Pineapple"]
+        }
+      },
+      "Red Banana": {
+        "Rabi": {
+          "fertilizers": ["Compost", "DAP"],
+          "pesticides": ["Fungicide"],
+          "water": "High",
+          "profit_per_acre": 21000,
+          "alternative_crops": ["Banana Cavendish", "Guava"]
+        }
+      }
+    },
+    "Papaya": {
+      "Red Lady": {
+        "Kharif": {
+          "fertilizers": ["Urea", "Compost"],
+          "pesticides": ["Fungicides", "Insecticides"],
+          "water": "High",
+          "profit_per_acre": 18000,
+          "alternative_crops": ["Banana", "Mango"]
+        }
+      }
+    },
+    "Guava": {
+      "Lucknow": {
+        "Rabi": {
+          "fertilizers": ["Urea", "Potash"],
+          "pesticides": ["Fungicides"],
+          "water": "Medium",
+          "profit_per_acre": 15000,
+          "alternative_crops": ["Mango", "Papaya"]
+        }
+      }
+    },
+    "Pineapple": {
+      "Queen": {
+        "Kharif": {
+          "fertilizers": ["Compost", "MOP"],
+          "pesticides": ["Insecticides"],
+          "water": "High",
+          "profit_per_acre": 17000,
+          "alternative_crops": ["Banana", "Papaya"]
+        }
+      }
+    }
+  },
+  "Pulses": {
+    "Chickpea": {
+      "Kabuli": {
+        "Rabi": {
+          "fertilizers": ["Urea", "DAP"],
+          "pesticides": ["Insecticides"],
+          "water": "Low",
+          "profit_per_acre": 12000,
+          "alternative_crops": ["Lentil", "Pea"]
+        }
+      },
+      "Desi": {
+        "Rabi": {
+          "fertilizers": ["Compost", "Potash"],
+          "pesticides": ["Fungicides"],
+          "water": "Low",
+          "profit_per_acre": 11000,
+          "alternative_crops": ["Lentil", "Mustard"]
+        }
+      }
+    },
+    "Lentil": {
+      "Masoor": {
+        "Rabi": {
+          "fertilizers": ["Urea", "Compost"],
+          "pesticides": ["Insecticides"],
+          "water": "Low",
+          "profit_per_acre": 10500,
+          "alternative_crops": ["Chickpea", "Pea"]
+        }
+      }
+    }
+  },
+  "Oilseeds": {
+    "Sunflower": {
+      "Hybrid": {
+        "Kharif": {
+          "fertilizers": ["Urea", "DAP", "Compost"],
+          "pesticides": ["Insecticides", "Fungicides"],
+          "water": "Medium",
+          "profit_per_acre": 13000,
+          "alternative_crops": ["Groundnut", "Soybean"]
+        }
+      }
+    },
+    "Groundnut": {
+      "Spanish": {
+        "Kharif": {
+          "fertilizers": ["Urea", "MOP", "Compost"],
+          "pesticides": ["Fungicides", "Insecticides"],
+          "water": "Medium",
+          "profit_per_acre": 12500,
+          "alternative_crops": ["Sunflower", "Soybean"]
+        }
+      }
+    },
+    "Soybean": {
+      "Glycine": {
+        "Kharif": {
+          "fertilizers": ["Urea", "DAP", "Compost"],
+          "pesticides": ["Insecticides"],
+          "water": "Medium",
+          "profit_per_acre": 14000,
+          "alternative_crops": ["Groundnut", "Sunflower"]
+        }
+      }
+    }
+  },
+  "Spices": {
+    "Cardamom": {
+      "Green": {
+        "Rabi": {
+          "fertilizers": ["Compost", "Nitrogen"],
+          "pesticides": ["Insecticides"],
+          "water": "High",
+          "profit_per_acre": 22000,
+          "alternative_crops": ["Black Pepper", "Ginger"]
+        }
+      }
+    },
+    "Black Pepper": {
+      "Tellicherry": {
+        "Kharif": {
+          "fertilizers": ["Urea", "Compost"],
+          "pesticides": ["Fungicides", "Insecticides"],
+          "water": "High",
+          "profit_per_acre": 21000,
+          "alternative_crops": ["Cardamom", "Ginger"]
+        }
+      }
+    },
+    "Ginger": {
+      "Yellow": {
+        "Rabi": {
+          "fertilizers": ["Urea", "Compost", "Potash"],
+          "pesticides": ["Fungicides", "Insecticides"],
+          "water": "High",
+          "profit_per_acre": 20000,
+          "alternative_crops": ["Turmeric", "Cardamom"]
+        }
+      }
+    },
+    "Turmeric": {
+      "Alleppy": {
+        "Kharif": {
+          "fertilizers": ["Compost", "DAP"],
+          "pesticides": ["Fungicides"],
+          "water": "Medium",
+          "profit_per_acre": 18000,
+          "alternative_crops": ["Ginger", "Lemon Grass"]
+        }
+      }
+    }
+  },
+  "Beverages": {
+    "Coffee": {
+      "Arabica": {
+        "Rabi": {
+          "fertilizers": ["Compost", "Nitrogen"],
+          "pesticides": ["Insecticides"],
+          "water": "High",
+          "profit_per_acre": 25000,
+          "alternative_crops": ["Robusta Coffee", "Cardamom"]
+        }
+      },
+      "Robusta": {
+        "Kharif": {
+          "fertilizers": ["Urea", "Compost"],
+          "pesticides": ["Fungicides"],
+          "water": "High",
+          "profit_per_acre": 24000,
+          "alternative_crops": ["Arabica Coffee", "Black Pepper"]
+        }
+      }
+    },
+    "Cocoa": {
+      "Forastero": {
+        "Rabi": {
+          "fertilizers": ["Compost", "Potash"],
+          "pesticides": ["Insecticides"],
+          "water": "High",
+          "profit_per_acre": 22000,
+          "alternative_crops": ["Cocoa Trinitario", "Cardamom"]
+        }
+      }
+    }
+  },
+  "Herbs": {
+    "Mint": {
+      "Green": {
+        "Kharif": {
+          "fertilizers": ["Urea", "Compost"],
+          "pesticides": ["Insecticides"],
+          "water": "Medium",
+          "profit_per_acre": 10000,
+          "alternative_crops": ["Cauliflower", "Broccoli"]
+        }
+      },
+      "Red Lady": {
+        "Kharif": {
+          "fertilizers": ["Urea", "Compost"],
+          "pesticides": ["Fungicides", "Insecticides"],
+          "water": "High",
+          "profit_per_acre": 18000,
+          "alternative_crops": ["Banana", "Mango"]
+        }
+      }
+    },
+    "Guava": {
+      "Lucknow": {
+        "Rabi": {
+          "fertilizers": ["Urea", "Potash"],
+          "pesticides": ["Fungicides"],
+          "water": "Medium",
+          "profit_per_acre": 15000,
+          "alternative_crops": ["Mango", "Papaya"]
+        }
+      }
+    },
+    "Pineapple": {
+      "Queen": {
+        "Kharif": {
+          "fertilizers": ["Compost", "MOP"],
+          "pesticides": ["Insecticides"],
+          "water": "High",
+          "profit_per_acre": 17000,
+          "alternative_crops": ["Banana", "Papaya"]
+        }
+      }
+    }
+  },
+  "Cereals": {
+    "Barley": {
+      "Hordeum": {
+        "Rabi": {
+          "fertilizers": ["Urea", "Compost"],
+          "pesticides": ["Fungicides"],
+          "water": "Low",
+          "profit_per_acre": 10000,
+          "alternative_crops": ["Wheat", "Oats"]
+        }
+      }
+    },
+    "Millet": {
+      "Pearl": {
+        "Kharif": {
+          "fertilizers": ["Compost", "DAP"],
+          "pesticides": ["Insecticides"],
+          "water": "Low",
+          "profit_per_acre": 9500,
+          "alternative_crops": ["Sorghum", "Maize"]
+        }
+      },
+      "Finger": {
+        "Rabi": {
+          "fertilizers": ["Urea", "Potash"],
+          "pesticides": ["Insecticides"],
+          "water": "Low",
+          "profit_per_acre": 9000,
+          "alternative_crops": ["Maize", "Barley"]
+        }
+      }
+    },
+    "Sorghum": {
+      "Sweet": {
+        "Kharif": {
+          "fertilizers": ["Urea", "Compost"],
+          "pesticides": ["Fungicides"],
+          "water": "Medium",
+          "profit_per_acre": 11000,
+          "alternative_crops": ["Maize", "Millet"]
+        }
+      }
+    },
+    "Oats": {
+      "White": {
+        "Rabi": {
+          "fertilizers": ["Compost", "DAP"],
+          "pesticides": ["Insecticides"],
+          "water": "Low",
+          "profit_per_acre": 9500,
+          "alternative_crops": ["Barley", "Wheat"]
+        }
+      }
+    }
+  },
+  "Legumes": {
+    "Pea": {
+      "Green": {
+        "Rabi": {
+          "fertilizers": ["Urea", "Compost"],
+          "pesticides": ["Fungicides", "Insecticides"],
+          "water": "Medium",
+          "profit_per_acre": 10500,
+          "alternative_crops": ["Chickpea", "Lentil"]
+        }
+      }
+    },
+    "Bean": {
+      "French": {
+        "Kharif": {
+          "fertilizers": ["Urea", "Potash"],
+          "pesticides": ["Fungicides"],
+          "water": "Medium",
+          "profit_per_acre": 11000,
+          "alternative_crops": ["Pea", "Cowpea"]
+        }
+      }
+    }
+  },
+  "Miscellaneous": {
+    "Lemon Grass": {
+      "Cymbopogon": {
+        "Kharif": {
+          "fertilizers": ["Compost", "Urea"],
+          "pesticides": ["Neem Oil"],
+          "water": "Medium",
+          "profit_per_acre": 9500,
+          "alternative_crops": ["Mint", "Basil"]
+        }
+      }
+    },
+    "Tulsi": {
+      "Sacred": {
+        "Rabi": {
+          "fertilizers": ["Compost", "DAP"],
+          "pesticides": ["Neem Oil"],
+          "water": "Medium",
+          "profit_per_acre": 9000,
+          "alternative_crops": ["Mint", "Lemon Grass"]
+        }
+      }
+    }
+  }
+}
+
+
+
+

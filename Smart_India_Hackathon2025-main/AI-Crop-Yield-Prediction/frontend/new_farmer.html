@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KISAN SAHAYTA</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>🌾 KISAN SAHAYTA</h1>
+    <p>Helping beginner farmers choose the right crops for their land</p>
+    <div id="languageSelector">
+      <select id="language">
+        <option value="en">English</option>
+        <option value="hi">हिन्दी</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>📋 Enter Your Details</h2>
+      <div class="form-grid">
+        <label for="state">State</label>
+        <select id="state">
+          <option value="">-- Choose State --</option>
+        </select>
+
+        <label for="district">District</label>
+        <select id="district">
+          <option value="">-- Choose District --</option>
+        </select>
+
+        <label for="land">Land (in acres)</label>
+        <input type="number" id="land" placeholder="e.g., 5" min="1"/>
+
+        <label for="season">Season</label>
+        <select id="season">
+          <option value="Any">Any</option>
+          <option value="Kharif">Kharif</option>
+          <option value="Rabi">Rabi</option>
+          <option value="Zaid">Zaid</option>
+        </select>
+      </div>
+
+      <div class="buttons">
+        <button id="getData">🔍 Get Recommendations</button>
+        <button id="reset" class="reset-btn">♻️ Reset</button>
+      </div>
+    </section>
+
+    <section id="result" class="result-section"></section>
+  </main>
+
+  <footer>
+    <p>🚀 Built at Hackathon | Empowering Farmers with Data</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

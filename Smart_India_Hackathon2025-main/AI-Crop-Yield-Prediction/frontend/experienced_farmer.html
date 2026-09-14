@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KISAN SAHAYTA</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div class="app-container visible">
+    <!-- Top bar -->
+    <div class="top-bar">
+      <h2 id="title">KISAN SAHAYTA</h2>
+      <p id="subtitle">Empowering Farmers with Technology</p>
+      <div class="lang-toggle">
+        <button onclick="toggleLanguage('en')">English</button>
+        <button onclick="toggleLanguage('hi')">हिंदी</button>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="grid-form">
+      <div class="form-box">
+        <label for="state" id="labelState">Select State</label>
+        <select id="state" onchange="populateDistricts()"></select>
+      </div>
+
+      <div class="form-box">
+        <label for="district" id="labelDistrict">Select District</label>
+        <select id="district"></select>
+      </div>
+
+      <div class="form-box">
+        <label for="crop" id="labelCrop">Select Crop</label>
+        <select id="crop" onchange="populateCropTypes()"></select>
+      </div>
+
+      <div class="form-box">
+        <label for="cropType" id="labelCropType">Select Crop Type</label>
+        <select id="cropType"></select>
+      </div>
+
+      <div class="form-box">
+        <label for="season" id="labelSeason">Select Season</label>
+        <select id="season"></select>
+      </div>
+
+      <div class="form-box">
+        <label for="year" id="labelYear">Select Year</label>
+        <select id="year">
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+          <option value="2026">2026</option>
+        </select>
+      </div>
+
+      <div class="form-box">
+        <label for="soil" id="labelSoil">Select Soil Type</label>
+        <select id="soil"></select>
+      </div>
+
+      <div class="form-box">
+        <label for="area" id="labelArea">Enter Area (hectares)</label>
+        <input type="number" id="area" placeholder="e.g. 5">
+      </div>
+
+      <button onclick="generateAdvisory()" id="btnGenerate">Generate Advisory</button>
+    </div>
+
+    <!-- Result -->
+    <div id="result"></div>
+  </div>
+
+  <script src="script1.js"></script>
+</body>
+</html>

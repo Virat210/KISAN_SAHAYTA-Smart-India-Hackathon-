@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f7f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 1000px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.top-bar {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.lang-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.lang-toggle button {
+  background: #2f6d3d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin-left: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.lang-toggle button:hover {
+  background: #26532b;
+}
+
+h2 {
+  color: #2f6d3d;
+  margin: 0;
+}
+
+.grid-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.form-box {
+  background: #f9fdf9;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+select,
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+button {
+  grid-column: 1 / -1;
+  margin-top: 20px;
+  padding: 14px;
+  background: #2f6d3d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #26532b;
+  transform: scale(1.02);
+}
+
+/* Result card */
+.result-card {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  background: #eaf7ea;
+  color: #1b4332;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.result-card h3 {
+  margin-top: 0;
+  text-align: center;
+  color: #2f6d3d;
+  font-size: 20px;
+}
+
+.result-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+.result-card li {
+  background: #ffffff;
+  margin: 8px 0;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #1b4332;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.result-card li b {
+  color: #2f6d3d;
+}

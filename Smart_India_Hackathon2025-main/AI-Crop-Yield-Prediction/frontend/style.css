@@ -1,0 +1,50 @@
+* { box-sizing: border-box; font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
+body { margin: 0; padding: 0; background: #f9fafb; color: #222; }
+
+header {
+  background: linear-gradient(120deg, #16a34a, #4ade80);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+header h1 { margin: 0; font-size: 2.2rem; }
+header p { margin-top: 0.5rem; font-size: 1.1rem; }
+
+#languageSelector { position: absolute; top: 10px; right: 10px; }
+
+main { padding: 1.5rem; max-width: 1000px; margin: auto; }
+
+.form-section { background: #fff; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); margin-bottom: 2rem; }
+.form-section h2 { margin-top: 0; margin-bottom: 1rem; color: #166534; }
+
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.5rem; align-items: center; }
+.form-grid label { font-weight: 600; }
+.form-grid select, .form-grid input { padding: 0.5rem; border: 1px solid #d1d5db; border-radius: 6px; font-size: 1rem; width: 100%; }
+
+.buttons { margin-top: 1.5rem; display: flex; gap: 1rem; }
+button { padding: 0.7rem 1.2rem; font-size: 1rem; border: none; border-radius: 8px; cursor: pointer; transition: all 0.2s ease-in-out; }
+#getData { background: #16a34a; color: white; }
+#getData:hover { background: #15803d; }
+.reset-btn { background: #e5e7eb; color: #111827; }
+.reset-btn:hover { background: #d1d5db; }
+
+.result-section { background: #fff; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+.result-section h2 { margin-top: 0; color: #166534; }
+
+.crop-block { margin-bottom: 1.5rem; padding: 1rem; border: 1px solid #e5e7eb; border-radius: 10px; background: #f9fafb; }
+.crop-block h3 { margin-top: 0; color: #111827; }
+
+.crop-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 0.5rem; }
+.crop-meta p { margin: 0.3rem 0; }
+
+hr { border: none; border-top: 1px solid #e5e7eb; margin: 1.5rem 0; }
+
+.error-box { padding: 1rem; background: #fee2e2; border: 1px solid #ef4444; color: #991b1b; border-radius: 8px; }
+.info-box { padding: 1rem; background: #e0f2fe; border: 1px solid #0284c7; color: #075985; border-radius: 8px; }
+.muted { color: #6b7280; font-size: 0.95rem; }
+
+footer { text-align: center; padding: 1rem; margin-top: 2rem; background: #f3f4f6; font-size: 0.9rem; color: #374151; }
+footer a { color: #16a34a; text-decoration: none; }
+footer a:hover { text-decoration: underline; }

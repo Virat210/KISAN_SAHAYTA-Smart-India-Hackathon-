@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krishi Sahayta</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #1b4332;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      /* Use a green field image background */
+background: url('https://images.pexels.com/photos/27952349/pexels-photo-27952349.jpeg') no-repeat center center/cover;
+      position: relative;
+    }
+
+    /* Overlay for better readability */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+    }
+
+    /* Hero Heading */
+    h1 {
+      position: relative;
+      font-size: 4.5rem;
+      font-weight: 900;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 40px 0 15px;
+      background: linear-gradient(90deg, #d8f3dc, #52b788);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      z-index: 1;
+    }
+
+    /* Subheading */
+    h2 {
+      position: relative;
+      font-size: 1.4rem;
+      font-weight: 400;
+      text-align: center;
+      color: #d8f3dc;
+      margin-bottom: 60px;
+      z-index: 1;
+    }
+
+    /* Middle section */
+    .container {
+      position: relative;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 80px;
+      z-index: 1;
+    }
+
+    a.card {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 30px 50px;
+      border-radius: 15px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #1b4332;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      text-decoration: none;
+    }
+
+    a.card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+      background: #95d5b2;
+      color: white;
+    }
+
+    .divider {
+      width: 2px;
+      background: rgba(255,255,255,0.6);
+      height: 200px;
+    }
+
+    /* Footer */
+    footer {
+      position: relative;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #d8f3dc;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      z-index: 1;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        gap: 40px;
+      }
+      .divider {
+        width: 60%;
+        height: 2px;
+      }
+      h1 {
+        font-size: 2.8rem;
+      }
+      h2 {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero -->
+  <h1>KRISHI SAHAYTA</h1>
+  <h2>Empowering Farmers with Technology</h2>
+
+  <!-- Middle section -->
+  <div class="container">
+    <a href="new_farmer.html" class="card">🌱 New Farmer</a>
+
+    <div class="divider"></div>
+
+    <a href="experienced_farmer.html" class="card">🌾 Experienced Farmer</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    built in hackathon | HackersInc
+  </footer>
+</body>
+</html>
